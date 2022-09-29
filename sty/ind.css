@@ -10,11 +10,28 @@
     border: none;
     box-sizing: border-box;
     text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+h1 {
+    color: rgb(255, 71, 71);
+}
+
+a {
     color: #000;
 }
 
 ul {
     list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 300px;
 }
 
 html, body {
@@ -23,10 +40,18 @@ html, body {
     overflow-x: hidden;
 }
 
+body {
+    background-color: #02000a;
+}
 /*Header*/
+
+header {
+    height: 40vh;
+}
 
 header menu {
     width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +63,74 @@ header menu ul{
 
 header menu ul li a {
     display: block;
+    color: #fff;
+}
+
+header menu ul li:not(:first-child){
+    margin-left: 10px;
+}
+
+header .banner {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #000 url('../img/header-wallpaper.jpeg') no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+header .banner .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #02000a, transparent);
+    box-shadow: inset 0px 0px 10px #02000a;
+    z-index: 2;
+}
+
+header .banner .banner-cont {
+    padding: 20px;
+    margin: auto 0;
+    width: 40%;
+    height: 100%;
+}
+
+header > .banner > .banner-cont > p {
+    color: #fff;
+}
+
+header .banner .banner-cont .banner-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+
+
+main {
+    margin: auto;
+    width: 70%;
+}
+
+main > h1,p {
+    color: #fff;
+}
+
+.box1 {
+    margin-top: 50px;
+}
+
+.box-cont {
+    display: flex;
+}
+
+.box-cont h1{
+    text-align: center;
+}
+
+.box-cont img {
+    width: 500px;
 }
