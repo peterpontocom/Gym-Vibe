@@ -168,6 +168,13 @@ footer p button {
     cursor: pointer;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .box-cont img {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 768px){
     main {
         width: 90%;
