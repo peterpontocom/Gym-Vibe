@@ -134,3 +134,64 @@ main > h1,p {
 .box-cont img {
     width: 600px;
 }
+
+.superB {
+    margin: auto; 
+    display: block; 
+    width: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #0c003d;
+}
+
+footer p {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+footer p input {
+    background: transparent;
+    color: #000;
+    padding: 10px;
+}
+
+footer p button {
+    background-color: #02000a;
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    main {
+        width: 90%;
+    }
+    .box-cont img {
+        width: 300px;
+    }
+    .superB {
+        width: 300px;
+    }
+
+    .banner-cont {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .box-cont {
+        flex-direction: column;
+    }
+    .box-cont img {
+        width: 300px;
+    }
+    footer {
+        flex-direction: column;
+    }
+}
